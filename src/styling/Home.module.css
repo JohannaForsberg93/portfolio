@@ -1,3 +1,4 @@
+
 .container {
 	background: url("doughnuts.jpg");
 	background-size: contain;
@@ -13,10 +14,26 @@
 	width: 100%;
 	position: relative;
 	overflow: auto;
-	/* Om content är för långt så kommer en scrollbar att synas */
+	/* Om content är för långt så kommer en scrollbar att synas. Vill jag ha detta? */
 	scroll-snap-align: start;
 }
 .content {
 	text-align: center;
 	margin-top: 300px;
+
+	position: absolute;
+	top: 50px;
+	left: 200px;
+	/* max-width: 900px; */
+}
+.content h1 {
+	display: inline-block;
+	background-color: lightyellow;
+	padding: 10px 20px;
+}
+.content p {
+	background-color: lightyellow;
+	padding: 10px 20px;
+	margin-top: 20px;
+	max-width: max-content;
 }

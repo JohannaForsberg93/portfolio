@@ -6,16 +6,66 @@
 	width: 100%;
 	/* scroll-snap-type: y mandatory; */
 }
+.section h1 {
+	margin-top: 50px;
+	text-align: center;
+}
 .section {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	overflow: auto;
-	/* Om content är för långt så kommer en scrollbar att synas */
+	/* Om content är för långt så kommer en scrollbar att synas. Behövs för att kunna ha margin-top på h1 */
 	scroll-snap-align: start;
-
 }
+
+/* Grid */
 .content {
+
+	/* margin-top: 50px; */
+	margin: 50px 50px 20px 50px;
+	/* text-align: center; */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* column-gap: 50px; */
+	/* grid-template-rows: 100px; */
+}
+.grid1 p {
+	/* margin-top: 30px; */
+    background: rgba(255, 255, 255, 0.835);
+	padding: 30px;
+	text-align:left;
+	border-radius: 4px;
+	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+
+.grid2 {
 	text-align: center;
-	margin-top: 300px;
+}
+
+@media screen and (max-width: 1100px) {
+	.container {
+		height: 200vh;
+	}
+	.content {
+		grid-template-columns: 1fr;
+		column-gap: 30px;
+	}
+	.grid2 {
+		margin-top: 100px;
+	}
+
+  }
+
+/* Contact */
+.section h3 {
+	text-align: center;
+	margin: 30px 0 20px 0;
+}
+.contact {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 50px;
 }

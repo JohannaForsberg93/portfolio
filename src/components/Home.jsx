@@ -6,7 +6,8 @@ function Home() {
 		<div className={stylesheet.container}>
 			<div className={stylesheet.section}>
 				<div className={stylesheet.content}>
-					<h1>This is Home page</h1>
+					<h1>JOHANNA FORSBERG</h1>
+					<p>Nybakad frontendutvecklare</p>
 				</div>
 			</div>
 		</div>
