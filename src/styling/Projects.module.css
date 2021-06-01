@@ -1,5 +1,5 @@
 .container {
-	background: url("korv1.png");
+	background: url("home.svg");
 	/* background-color: #659DBD; */
 	background-size: cover;
 	background-attachment: fixed;
@@ -20,6 +20,19 @@
 	text-align: center;
 }
 
+.flex {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex h1 {
+    background: lightyellow;
+	padding: 10px 20px;
+
+}
+
 .grid {
 	margin: 300px 100px 70px 100px;
 	display: grid;
@@ -37,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.900);
+    background: rgba(255, 249, 223, 0.9);
  	font-size: 36px;
     color: rgb(92, 92, 92);
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;

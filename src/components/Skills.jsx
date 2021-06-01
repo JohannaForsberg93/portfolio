@@ -5,8 +5,10 @@ function Skills() {
 	return (
 		<div className={stylesheet.container}>
 			<div className={stylesheet.section}>
-				<h1>Skills</h1>
-				<p>Tekniker och verktyg jag fått lära mig i skolan och ute på praktik</p>
+				<div className={stylesheet.flex}>
+					<h1>Skills</h1>
+					<p>Tekniker och verktyg jag fått lära mig i skolan och ute på praktik</p>
+				</div>
 				<div className={stylesheet.grid}>
 
 					<div className={stylesheet.card}>JavaScript</div>

@@ -10,7 +10,9 @@ html, body {
 	height: 100vh;
 	/* overflow: scroll; */
 	scroll-snap-type: y mandatory;	
-	color:#383838;
+	/* color:#383838; */
+	color:#434343;
+
 }
 
 h1 {
@@ -19,7 +21,6 @@ h1 {
 	font-weight: 900;
 	letter-spacing: 4px;
 	font-style: bold;
-	/* color:#434343 */
 }
 
 h3 {

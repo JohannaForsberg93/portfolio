@@ -1,6 +1,6 @@
 .container {
 	/* background: url("macarons.jpg"); */
-	background: url("korv1.png");
+	background: url("skills.svg");
 	background-size:cover;
 	background-attachment: fixed;
 	height: 100vh;
@@ -8,10 +8,20 @@
 	scroll-snap-type: y mandatory;
 	
 }
-.section h1 {
+
+.flex {
 	margin-top: 50px;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.flex h1 {
+    background: lightyellow;
+	padding: 10px 20px;
+
+}
+
 .section {
 	height: 100%;
 	width: 100%;
@@ -34,7 +44,8 @@
 }
 .grid1 p {
 	/* margin-top: 30px; */
-    background: rgba(255, 255, 255, 0.835);
+    /* background: rgba(255, 255, 255, 0.835); */
+	background: rgba(250, 246, 227, 0.9);
 	padding: 30px;
 	text-align:left;
 	border-radius: 4px;

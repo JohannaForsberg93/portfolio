@@ -5,7 +5,9 @@ function Projects() {
 	return (
 		<div className={stylesheet.container}>
 			<div className={stylesheet.section}>
-				<h1>Mina projekt från skolan</h1>
+				<div className={stylesheet.flex}>
+					<h1>Mina projekt från skolan</h1>
+				</div>
 				<div className={stylesheet.grid}>
 					<div className={stylesheet.card}>
 						<h5>Code snippets</h5>

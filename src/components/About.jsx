@@ -8,7 +8,10 @@ function About() {
 		<div className={stylesheet.container}>
 
 			<div className={stylesheet.section}>
-				<h1>VEM ÄR JAG?</h1>
+				<div className={stylesheet.flex} >
+					<h1>VEM ÄR JAG?</h1>
+				</div>
+
 				<div className={stylesheet.content}>
 					<div className={stylesheet.grid1}>
 						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br /><br />
