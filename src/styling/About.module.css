@@ -1,6 +1,6 @@
 .container {
 	/* background: url("macarons.jpg"); */
-	background: url("skills.svg");
+	background: url("home.svg");
 	background-size:cover;
 	background-attachment: fixed;
 	height: 100vh;
@@ -17,7 +17,7 @@
 }
 
 .flex h1 {
-    background: lightyellow;
+    background: white;
 	padding: 10px 20px;
 
 }
@@ -45,7 +45,7 @@
 .grid1 p {
 	/* margin-top: 30px; */
     /* background: rgba(255, 255, 255, 0.835); */
-	background: rgba(250, 246, 227, 0.9);
+	background: white;
 	padding: 30px;
 	text-align:left;
 	border-radius: 4px;
