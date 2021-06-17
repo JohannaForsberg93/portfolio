@@ -1,0 +1,65 @@
+.container {
+	background: url("home.svg");
+	/* background-color: #41B3A3; */
+	background-size: cover;
+	/* Behåller bildens proportioner. */
+	background-attachment: fixed;
+	/* Låser fast bakgrundsbilden, så när man scrollar förflyttas den inte. */
+	height: 100vh;
+	width: 100%;
+	scroll-snap-type: y mandatory;
+	
+}
+.flex {
+	height: 100%;
+	position: relative;
+	scroll-snap-align: start;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: start;
+	margin-left: 70px;
+}
+.flex h1 {
+	background-color: white;
+	font-size: 4vw;
+}
+
+.flex p {
+	background-color: white;
+	padding: 10px 20px;
+	margin-top: 20px;
+	max-width: max-content;
+	font-size: 1.5vw;
+}
+
+@media screen and (max-width: 768px) {
+
+	.flex {
+		margin: 20px;
+		align-items: center;
+	}
+	.flex h1 {
+		font-size: 8vw;
+	}
+	.flex p {
+		font-size: 4vw;
+
+	}
+
+}
+@media screen and (max-width: 480px) {
+
+	.flex {
+		margin: 20px;
+		align-items: center;
+	}
+	.flex h1 {
+		font-size: 12vw;
+	}
+	.flex p {
+		font-size: 5vw;
+	}
+
+}
