@@ -7,14 +7,10 @@ import Projects from './components/Projects';
 function App() {
 	return (
 		<div className="App">
-			{/* <h1>Hello World</h1> */}
-
 			<Home></Home>
 			<About></About>
 			<Skills></Skills>
 			<Projects></Projects>
-
-
 		</div>
 	);
 }

@@ -1,6 +1,5 @@
 .container {
 	background: url("home.svg");
-	/* background-color: #659DBD; */
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
@@ -15,11 +14,6 @@
 	overflow: auto;
 	scroll-snap-align: start;
 }
-.section h1 {
-	margin-top: 30px;
-	text-align: center;
-}
-
 .flex {
 	margin-top: 50px;
 	display: flex;
@@ -30,22 +24,21 @@
 .flex h1 {
     background: white;
 	padding: 10px 20px;
+	margin-top: 30px;
+	text-align: center;
 
 }
 
 .grid {
-	margin: 300px 100px 70px 100px;
+	margin: 150px 100px 70px 100px;
 	display: grid;
 	gap: 3rem;
-
-	grid-template-columns: repeat( 4, minmax(300px, 1fr) );
-
-	grid-template-rows: repeat(minmax(250px, 1fr));
+	grid-template-columns: repeat( 4, 1fr);
+	grid-template-rows:  1fr;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
+	text-align: center;
     justify-content: center;
     align-items: center;
     background: white;
@@ -57,11 +50,7 @@
     border-radius: 4px;
     transition: all 500ms;
     overflow: hidden;
-	padding: 50px;
-
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
+	padding: 10px;
  }
   
 .card:hover {
@@ -69,11 +58,6 @@
     transform: translateY(-3px) scale(1.1);
 	cursor: pointer;
 }
-
-/* .card:nth-child(1):hover {
-	background: url(snippets.png);
-	background-size: cover;
-} */
 
 .card p {
 	display: none;
@@ -117,13 +101,6 @@
       to { opacity: 1; }
 }
 
-
-
-/* .card:nth-child(1) image:hover {
-	opacity: 0.5;
-} */
-
-
 .card h5 {
 	text-align: center;
 	align-items: center;
@@ -131,4 +108,58 @@
 
 a, a:visited {
 	text-decoration: none;
+}
+
+.card span {
+	font-size: 0.6em;
+	margin: 5px;
+	background-color: #fdd5ea;
+	padding: 5px 10px;
+	margin-bottom: 50px;
+}
+
+/* Responsivitet */
+
+@media (max-width: 1300px) {
+
+	.grid {
+		grid-template-columns: repeat( 3, 1fr);
+	}
+	.card {
+		padding: 20px;
+	}
+	.container {
+		height: 150vh;
+	}
+}
+
+@media (max-width: 1000px) {
+	.grid {
+		grid-template-columns: repeat( 2, 1fr);
+	}
+	.card {
+		padding: 20px;
+	}
+	.container {
+		height: 160vh;
+	}
+}
+
+@media (max-width: 769px) {
+	.flex h1 {
+		font-size: 60px;
+	}
+	.grid {
+		grid-template-columns: 1fr;
+		grid-auto-rows: 1fr;
+	}
+	.container {
+		height: 170vh;
+	}
+}
+
+@media (max-width: 480px) {
+	.flex h1 {
+		font-size: 50px;
+	}
 }
