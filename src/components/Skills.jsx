@@ -18,6 +18,7 @@ function Skills() {
 					<div className={stylesheet.card}>Bootstrap</div>
 					<div className={stylesheet.card}>SASS</div>
 					<div className={stylesheet.card}>React</div>
+					<div className={stylesheet.card}>Redux</div>
 					<div className={stylesheet.card}>Aurelia</div>
 					<div className={stylesheet.card}>Vue</div>
 					<div className={stylesheet.card}>Angular</div>
@@ -25,10 +26,9 @@ function Skills() {
 					<div className={stylesheet.card}>Azure DevOps</div>
 					<div className={stylesheet.card}>MongoDB</div>
 					<div className={stylesheet.card}>Express</div>
-					<div className={stylesheet.card}>Node</div>
+					<div className={stylesheet.card}>Node.js</div>
 					<div className={stylesheet.card}>Mongoose</div>
 					<div className={stylesheet.card}>Git</div>
-
 				</div>
 			</div>
 		</div>

@@ -20,12 +20,20 @@ h1 {
 	padding: 0.15em 0.5em;
 }
 
-h3 {
+h2 {
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 2.5em;  
+	letter-spacing: 4px;
+	font-style: bold;
+	padding: 0.15em 0.5em;
+}
+
+/* h3 {
 	font-family: 'Sintony', sans-serif;
 	font-size: 24px;
 	font-weight: 600;
 	letter-spacing: 4px;
-}
+} */
 
 p {
 	font-family: 'Sintony', sans-serif;

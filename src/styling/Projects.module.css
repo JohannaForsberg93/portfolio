@@ -26,7 +26,13 @@
 	padding: 10px 20px;
 	margin-top: 30px;
 	text-align: center;
+}
 
+.flex h2 {
+    background: white;
+	padding: 10px 20px;
+	margin-top: 30px;
+	text-align: center;
 }
 
 .grid {
@@ -35,6 +41,8 @@
 	gap: 3rem;
 	grid-template-columns: repeat( 4, 1fr);
 	grid-template-rows:  1fr;
+	justify-content: center;
+
 }
 
 .card {
@@ -51,55 +59,16 @@
     transition: all 500ms;
     overflow: hidden;
 	padding: 10px;
+	margin-bottom: 20px;
+ }
+
+ .card p {
+	 margin-top: 30px;
  }
   
-.card:hover {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-3px) scale(1.1);
-	cursor: pointer;
-}
 
-.card p {
-	display: none;
-	opacity: 0;
-	transition-duration: 3s;
-	transition-property: opacity;
-}
 
-.icon {
-	display: none;
-	opacity: 0;
-	transition-duration: 3s;
-	transition-property: opacity;
-}
 
-.card:hover p {
-	display: block;
-	margin-top: 15px;
-	font-size: 0.5em;
-	padding: 5px;
-	text-align: center;
-	opacity: 1;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-.card:hover div {
-	display: block;
-	margin-top: 10px;
-	opacity: 1;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
 
 .card h5 {
 	text-align: center;
@@ -115,10 +84,62 @@ a, a:visited {
 	margin: 5px;
 	background-color: #fdd5ea;
 	padding: 5px 10px;
-	margin-bottom: 50px;
+
 }
 
 /* Responsivitet */
+
+/* För att det bara ska gå att hovra på stora skärmar */
+@media (min-width: 786px) {
+	.card:hover {
+		box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+		transform: translateY(-3px) scale(1.1);
+		cursor: pointer;
+	}
+	
+	.card p {
+		display: none;
+		opacity: 0;
+		transition-duration: 3s;
+		transition-property: opacity;
+	}
+	
+	.icon {
+		display: none;
+		opacity: 0;
+		transition-duration: 3s;
+		transition-property: opacity;
+	}
+	
+	.card:hover p {
+		display: block;
+		margin-top: 15px;
+		font-size: 0.5em;
+		padding: 5px;
+		text-align: center;
+		opacity: 1;
+		-webkit-animation: fadeIn 1s;
+		animation: fadeIn 1s;
+	}
+	
+	.card:hover div {
+		display: block;
+		margin-top: 10px;
+		opacity: 1;
+		-webkit-animation: fadeIn 1s;
+		animation: fadeIn 1s;
+	}
+
+	@-webkit-keyframes fadeIn {
+		from { opacity: 0; }
+		  to { opacity: 1; }
+	}
+	@keyframes fadeIn {
+		from { opacity: 0; }
+		  to { opacity: 1; }
+	}
+	
+}
 
 @media (max-width: 1300px) {
 

@@ -9,8 +9,23 @@ function Projects() {
 		<div className={stylesheet.container}>
 			<div className={stylesheet.section}>
 				<div className={stylesheet.flex}>
-					<h1>Skolarbeten</h1>
+					<h1>Projekt</h1>
 				</div>
+				<div className={stylesheet.grid}>
+					<a href="https://memories-project77.netlify.app/" target="_blank" rel="noreferrer" rel="noopener">
+						<div className={stylesheet.card}>
+							<h5>Memories project</h5>
+							<span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+							<p>En MERN-stack app där jag följde en tutorial för att öva på flera tekniker, bl.a. React, Redux, Material-UI och Mongoose.</p>
+							<div className={stylesheet.icon}><FontAwesomeIcon icon={faArrowRight} /></div>
+						</div>
+					</a>
+				</div>
+
+				<div className={stylesheet.flex}>
+					<h2>Skolarbeten</h2>
+				</div>
+
 				<div className={stylesheet.grid}>
 
 					<a href="https://johannaforsberg93.github.io/starwars/" target="_blank" rel="noreferrer" rel="noopener">
@@ -22,6 +37,7 @@ function Projects() {
 						</div>
 					</a>
 
+
 					<a href="https://imprex92.github.io/I-Love-Movies/" target="_blank" rel="noreferrer" rel="noopener">
 						<div className={stylesheet.card}>
 							<h5>I love movies</h5>
@@ -31,8 +47,6 @@ function Projects() {
 							<div className={stylesheet.icon}><FontAwesomeIcon icon={faArrowRight} /></div>
 						</div>
 					</a>
-
-
 
 					<a href="https://johannaforsberg93.github.io/code-snippets/" target="_blank" rel="noreferrer" rel="noopener">
 						<div className={stylesheet.card}>
@@ -60,6 +74,7 @@ function Projects() {
 						</div>
 					</a>
 				</div>
+
 			</div>
 		</div>
 	)
